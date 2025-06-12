@@ -58,9 +58,9 @@ ax2.plot(x, pourcentages, color='#ff7f0e', linestyle='--', label='Taux (%)')
 for xi in range(0, int(max_x)+1, pas_annotation):
     yi = calcul_honoraires(xi, paliers)
     pct = yi/xi*100 if xi>0 else 0
-    ax1.annotate(f"{yi:,.0f}€", (xi, yi), textcoords="offset points", xytext=(0,10), ha='center', color='#1f77b4")
+    ax1.annotate(f"{yi:,.0f}€", (xi, yi), textcoords="offset points", xytext=(0,10), ha='center', color="#1f77b4")
     if xi > 0:
-        ax2.annotate(f"{pct:.1f}%", (xi, pct), textcoords="offset points", xytext=(0,-15), ha='center', color='#ff7f0e")
+        ax2.annotate(f"{pct:.1f}%", (xi, pct), textcoords="offset points", xytext=(0,-15), ha='center', color="#ff7f0e")
 
 # Mise en forme
 ax1.set_xlabel("Investissements (€)")
