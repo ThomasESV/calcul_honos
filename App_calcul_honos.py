@@ -64,8 +64,8 @@ for xi in range(0, int(max_x)+1, pas_annotation):
 
 # Mise en forme
 ax1.set_xlabel("Investissements (€)")
-ax1.set_ylabel("Honoraires (€)", color='#1f77b4")
-ax2.set_ylabel("Taux (%)", color='#ff7f0e")
+ax1.set_ylabel("Honoraires (€)", color="#1f77b4")
+ax2.set_ylabel("Taux (%)", color="#ff7f0e")
 plt.title("Évolution des honoraires par palier")
 plt.grid(True)
 
